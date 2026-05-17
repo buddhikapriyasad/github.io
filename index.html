@@ -5,38 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Buddhika Priyasad</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 760px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 16px;
+    line-height: 1.6;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .left img {
+    width: 220px;
+    border-radius: 10px;
+  }
+
+  .right {
+    flex: 1;
+  }
+
+  h1 {
+    margin-bottom: 0.2em;
+  }
+
+  .muted {
+    color: #666;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
     }
-    h1 { margin-bottom: 0.2em; }
-    .muted { color: #666; }
-    a { text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+
+    .right {
+      text-align: center;
+    }
+  }
+    .photo-credit {
+  font-size: 0.8em;
+  color: #777;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 1.4;
+}
+</style>
 </head>
 <body>
-  <h1>Buddhika Priyasad</h1>
-  <p class="muted">Postdoctoral researcher in PDE and analysis</p>
 
-  <p>
-    Welcome to my homepage.
+  <div class="container">
+    
+    <div class="left">
+      <img src="buddhika-oberwolfach.png" alt="Buddhika Priyasad">
+      <p class="photo-credit">
+    Photo credit: Archives of the Mathematisches Forschungsinstitut Oberwolfach
   </p>
+    </div>
 
-  <h2>About</h2>
-  <p>
-    I work on control theory for PDEs, stabilization, and related topics.
-  </p>
+    <div class="right">
+      <h1>Buddhika Priyasad</h1>
+      <p class="muted">Postdoctoral researcher in PDE and analysis</p>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="publications.html">Publications</a></li>
-    <li><a href="Buddhika_CV-2026.pdf">CV</a></li>
-    <li><a href="https://scholar.google.com/citations?user=utddEQMAAAAJ&hl=en">Google Scholar</a></li>
-    <li><a href="mailto:priyasad@uni-konstanz.de">Email</a></li>
-  </ul>
+      <p>
+        Welcome to my homepage.
+      </p>
+
+      <h2>About</h2>
+      <p>
+        I work on control theory for PDEs, stabilization, and related topics.
+      </p>
+
+      <h2>Links</h2>
+      <ul>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="Buddhika_CV-2026.pdf">CV</a></li>
+        <li><a href="https://scholar.google.com/citations?user=utddEQMAAAAJ&hl=en">Google Scholar</a></li>
+        <li><a href="mailto:priyasad@uni-konstanz.de">Email</a></li>
+      </ul>
+    </div>
+
+  </div>
+
 </body>
 </html>
